@@ -1,11 +1,191 @@
-/* 
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: rgb(219, 216, 10);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
 
-*/
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+li.task-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+li.task-item:hover {
+    background-color: #f0f0f0;
+}
+
+li.no-task {
+    color: #999;
+    font-style: italic;
+    padding: 8px 10px;
+    background-color: transparent;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+li.task-item:hover .delete-btn {
+    display: inline;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.delete-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.counter-box {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.error-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffebee;
+    border: 1px solid #e57373;
+    color: #c62828;
+    border-radius: 6px;
+}
+
+.loading-message {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff3e0;
+    border: 1px solid #ffb74d;
+    color: #ef6c00;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.input-section {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.add-btn {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+.add-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.clear-all-btn {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.clear-all-btn:hover {
+    background-color: #d32f2f;
+}
+
+.clear-all-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.username-form {
+    text-align: center;
+}
+
+.username-form input {
+    margin-bottom: 10px;
+}
+
+.username-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.username-form button:hover {
+    background-color: #1976d2;
+}
+
+.username-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
